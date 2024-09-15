@@ -1,0 +1,128 @@
+:root{
+    --primary: rgb(0,36,107);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/005/205/623/non_2x/silhouette-of-businessman-on-mountain-top-over-sunset-sky-background-business-success-leadership-and-achievement-concept-free-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    font-family:"Roboto", sans-serif;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    box-shadow: 0 0 10px rgb(2,0,36);
+}
+
+.container{
+    max-width: 65%;
+    margin: 10px auto;
+    background: rgba(58, 55, 55, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid var(--primary);
+}
+h2{
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-family:"Roboto", sans-serif;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px 20px 0px;
+}
+#todoInput{
+    width: 60%;
+    padding: 8px;
+    background-color: #CADCFC;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid var(--primary);
+}
+::placeholder{
+    color: var(--primary);
+}
+
+#addTodo{
+    padding: 8px;
+    color: white;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    transition: background-color 0.3s;
+}
+#addTodo:hover{
+    cursor: pointer;
+    background-color: rgb(45, 71, 126);
+}
+
+#todoList{
+    max-width: 65.5%;
+    margin: 0 auto;
+    list-style: none;
+    margin-bottom: 10px;
+}
+li{
+    font-size: 1.3rem;
+    color: rgb(0, 55, 165);
+    padding: 10px;
+    font-family:"Roboto", sans-serif;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+ li:last-child{
+    border-bottom: none;
+ }
+
+li:hover{
+    background-color: var(--primary);
+    border-radius: 5px;
+    color: white;
+}
+
+.editBtn, .deleteBtn, .saveBtn {
+    padding: 6px 5px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.editBtn{
+    background-color: #ffd700;
+}
+.deleteBtn{
+    background-color: #ff6347;
+}
+.saveBtn{
+    background-color: rgb(36,186,115);
+}
+
+.editInput{
+    padding: 8px;
+    background-color: #CADCFC;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    li{
+        flex-direction: column;
+    }
+}
